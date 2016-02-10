@@ -22,6 +22,11 @@ beginning with `2.1.1`).
 *Note, that the `pluginname` should not end with `Plugin` since this is
 appended automatically.*
 
+When generating the plugin skeleton the `groupId` denotes the package and
+consequently, the generated plugin stub will be in that namespace. When the
+package or name of the plugin's main class changes the `pom.xml`, i.e. the
+`elasticsearch.plugin.classname` property *must* be adjusted as well.
+
 
 Elasticsearch Compatibility
 ---------------------------
