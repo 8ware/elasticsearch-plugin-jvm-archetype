@@ -1,6 +1,6 @@
 
-Elasticsearch Plugin Maven Archetype
-====================================
+Elasticsearch JVM Plugin Archetype
+==================================
 
-Maven archetype for creating Elasticsearch plugins.
+Maven archetype for creating Elasticsearch JVM plugins.
 
