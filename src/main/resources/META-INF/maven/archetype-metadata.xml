@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="elasticsearch-plugin-jvm-archetype">
+	<requiredProperties>
+		<requiredProperty key="pluginname"/>
+		<requiredProperty key="elasticsearchversion">
+			<defaultValue>2.1.1</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
+	<fileSets>
+		<fileSet encoding="UTF-8" filtered="true" packaged="true">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>**/*.java</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8" filtered="false">
+			<directory>src/main/assemblies</directory>
+			<includes>
+				<include>plugin.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8" filtered="false">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>plugin-descriptor.properties</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</archetype-descriptor>

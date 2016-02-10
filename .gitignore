@@ -3,3 +3,6 @@
 *~
 # vim
 .*.sw?
+
+# maven
+/target/
