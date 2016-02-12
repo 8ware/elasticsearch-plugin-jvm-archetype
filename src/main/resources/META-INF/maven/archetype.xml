@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype>
-  <id>elasticsearch-plugin-jvm-archetype</id>
-  <!--sources>
-	  <source>src/main/java/__es.plugin.name__Plugin.java</source>
-  </sources-->
-  <resources>
-    <resource>src/main/assemblies/plugin.xml</resource>
-    <resource>src/main/resources/plugin-descriptor.properties</resource>
-  </resources>
-  <testSources/>
-  <testResources/>
+	<id>elasticsearch-plugin-jvm-archetype</id>
+	<!--sources>
+		<source>src/main/java/__es.plugin.name__Plugin.java</source>
+	</sources-->
+	<resources>
+		<resource>src/main/assemblies/plugin.xml</resource>
+		<resource>src/main/resources/plugin-descriptor.properties</resource>
+	</resources>
+	<testSources/>
+	<testResources/>
 </archetype>
