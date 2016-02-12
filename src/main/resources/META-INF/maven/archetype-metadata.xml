@@ -14,7 +14,7 @@
 			</includes>
 		</fileSet>
 		<fileSet encoding="UTF-8" filtered="false">
-			<directory>src/main/assemblies</directory>
+			<directory>src/assembly</directory>
 			<includes>
 				<include>plugin.xml</include>
 			</includes>
