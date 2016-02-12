@@ -34,6 +34,7 @@ Elasticsearch Compatibility
 | Archetype | Elasticsearch |
 |:---------:|:-------------:|
 | 1.0.0     | 2.1.1         |
+| 1.1.0     | 2.2.0         |
 
 *Earlier 2.x versions of Elasticsearch might also work with version 1.0.0
 which however was not tested, yet.*
