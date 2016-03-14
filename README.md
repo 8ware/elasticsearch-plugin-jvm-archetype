@@ -22,7 +22,8 @@ Usage
 		 -DgroupId=org.example                                     \
 		 -DartifactId=test-plugin                                  \
 		 -Dversion=1.0.0                                           \
-		 -Dpluginname=Test
+		 -Dpluginname=Test                                         \
+		 -Dpackage=org.example.plugin.test
 	```
 
 Optionally, the Elasticsearch version can be specified with
