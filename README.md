@@ -18,7 +18,7 @@ Usage
 	mvn archetype:generate --batch-mode                           \
 	    -DarchetypeGroupId=com.github.eightward                   \
 		 -DarchetypeArtifactId=elasticsearch-plugin-jvm-archetype  \
-		 -DarchetypeVersion=1.0.0                                  \
+		 -DarchetypeVersion=1.1.2                                  \
 		 -DgroupId=org.example                                     \
 		 -DartifactId=test-plugin                                  \
 		 -Dversion=1.0.0                                           \
