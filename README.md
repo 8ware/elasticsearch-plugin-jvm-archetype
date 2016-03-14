@@ -15,7 +15,14 @@ Usage
 2.	Create Elasticsearch plugin with
 
 	```
-	mvn archetype:generate  -DarchetypeGroupId=com.github.eightward -DarchetypeArtifactId=elasticsearch-plugin-jvm-archetype -DarchetypeVersion=1.0.0  -DgroupId=org.example -DartifactId=test-plugin -Dversion=1.0.0 -Dpluginname=Test
+	mvn archetype:generate --batch-mode                           \
+	    -DarchetypeGroupId=com.github.eightward                   \
+		 -DarchetypeArtifactId=elasticsearch-plugin-jvm-archetype  \
+		 -DarchetypeVersion=1.0.0                                  \
+		 -DgroupId=org.example                                     \
+		 -DartifactId=test-plugin                                  \
+		 -Dversion=1.0.0                                           \
+		 -Dpluginname=Test
 	```
 
 Optionally, the Elasticsearch version can be specified with
