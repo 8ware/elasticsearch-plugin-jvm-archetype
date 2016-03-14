@@ -23,7 +23,8 @@ Usage
 		 -DartifactId=test-plugin                                  \
 		 -Dversion=1.0.0                                           \
 		 -Dpluginname=Test                                         \
-		 -Dpackage=org.example.plugin.test
+		 -Dpackage=org.example.plugin.test                         \
+		 -Delasticsearchbin=/path/to/elasticsearch/bin/elasticsearch
 	```
 
 Optionally, the Elasticsearch version can be specified with
