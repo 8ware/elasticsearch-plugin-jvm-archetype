@@ -26,9 +26,6 @@
 
 		<elasticsearch.bin>${elasticsearchbin}</elasticsearch.bin>
 
-		<assembly.format>zip</assembly.format>
-		<assembly.directory>${dollar}{project.build.directory}/releases</assembly.directory>
-
 		<debug.port>8000</debug.port>
 		<debug.opts></debug.opts>
 	</properties>
@@ -45,6 +42,16 @@
 			<properties>
 				<assembly.format>dir</assembly.format>
 				<assembly.directory>${dollar}{project.build.directory}/develop</assembly.directory>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>release</id>
+			<properties>
+				<assembly.format>zip</assembly.format>
+				<assembly.directory>${dollar}{project.build.directory}/releases</assembly.directory>
 			</properties>
 		</profile>
 	</profiles>
