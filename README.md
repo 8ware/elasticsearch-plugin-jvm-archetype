@@ -17,14 +17,14 @@ Usage
 	```
 	mvn archetype:generate --batch-mode                           \
 	    -DarchetypeGroupId=com.github.eightward                   \
-		 -DarchetypeArtifactId=elasticsearch-plugin-jvm-archetype  \
-		 -DarchetypeVersion=1.1.2                                  \
-		 -DgroupId=org.example                                     \
-		 -DartifactId=test-plugin                                  \
-		 -Dversion=1.0.0                                           \
-		 -Dpluginname=Test                                         \
-		 -Dpackage=org.example.plugin.test                         \
-		 -Delasticsearchbin=/path/to/elasticsearch/bin/elasticsearch
+	    -DarchetypeArtifactId=elasticsearch-plugin-jvm-archetype  \
+	    -DarchetypeVersion=1.1.2                                  \
+	    -DgroupId=org.example                                     \
+	    -DartifactId=test-plugin                                  \
+	    -Dversion=1.0.0                                           \
+	    -Dpluginname=Test                                         \
+	    -Dpackage=org.example.plugin.test                         \
+	    -Delasticsearchbin=/path/to/elasticsearch/bin/elasticsearch
 	```
 
 Optionally, the Elasticsearch version can be specified with
