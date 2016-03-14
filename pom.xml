@@ -5,7 +5,7 @@
 
 	<groupId>com.github.eightward</groupId>
 	<artifactId>elasticsearch-plugin-jvm-archetype</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 
 	<licenses>
 		<license>

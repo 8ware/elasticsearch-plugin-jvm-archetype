@@ -5,6 +5,9 @@
 		<requiredProperty key="elasticsearchversion">
 			<defaultValue>2.2.0</defaultValue>
 		</requiredProperty>
+		<requiredProperty key="elasticsearchbin">
+			<defaultValue>elasticsearch</defaultValue>
+		</requiredProperty>
 	</requiredProperties>
 	<fileSets>
 		<fileSet encoding="UTF-8" filtered="true" packaged="true">

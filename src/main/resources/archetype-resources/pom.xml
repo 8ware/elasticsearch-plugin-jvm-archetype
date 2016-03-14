@@ -23,7 +23,31 @@
 		<elasticsearch.plugin.jvm>true</elasticsearch.plugin.jvm>
 		<elasticsearch.plugin.site>false</elasticsearch.plugin.site>
 		<elasticsearch.plugin.isolated>true</elasticsearch.plugin.isolated>
+
+		<elasticsearch.bin>${elasticsearchbin}</elasticsearch.bin>
+
+		<assembly.format>zip</assembly.format>
+		<assembly.directory>${dollar}{project.build.directory}/releases</assembly.directory>
+
+		<debug.port>8000</debug.port>
+		<debug.opts></debug.opts>
 	</properties>
+
+	<profiles>
+		<profile>
+			<id>debug</id>
+			<properties>
+				<debug.opts>-agentlib:jdwp=transport=dt_socket,address=${dollar}{debug.port},server=y,suspend=y</debug.opts>
+			</properties>
+		</profile>
+		<profile>
+			<id>develop</id>
+			<properties>
+				<assembly.format>dir</assembly.format>
+				<assembly.directory>${dollar}{project.build.directory}/develop</assembly.directory>
+			</properties>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
@@ -42,7 +66,7 @@
 				<version>2.6</version>
 				<configuration>
 					<appendAssemblyId>false</appendAssemblyId>
-					<outputDirectory>${dollar}{project.build.directory}/releases/</outputDirectory>
+					<outputDirectory>${dollar}{assembly.directory}</outputDirectory>
 					<descriptors>
 						<descriptor>${dollar}{project.basedir}/src/assembly/plugin.xml</descriptor>
 					</descriptors>
@@ -55,6 +79,20 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.4.0</version>
+				<configuration>
+					<environmentVariables>
+						<JAVA_OPTS>${dollar}{debug.opts}</JAVA_OPTS>
+					</environmentVariables>
+					<executable>${dollar}{elasticsearch.bin}</executable>
+					<arguments>
+						<argument>-Des.path.plugins=${dollar}{assembly.directory}</argument>
+					</arguments>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
