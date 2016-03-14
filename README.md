@@ -26,7 +26,7 @@ Usage
 	```
 
 Optionally, the Elasticsearch version can be specified with
-`-Delasticsearchversion=2.1.1` (consider the archetype's compatibility
+`-Delasticsearchversion=<version>` (consider the archetype's compatibility
 beginning with `2.1.1`).
 
 *Note, that the `pluginname` should not end with `Plugin` since this is
