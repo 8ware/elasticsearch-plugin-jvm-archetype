@@ -4,6 +4,9 @@ Elasticsearch JVM Plugin Archetype
 
 Maven archetype for creating Elasticsearch JVM plugins.
 
+The goal is to provide an archetype with a good trade off between simplicity
+and development simplification/assistance.
+
 
 Usage
 -----
