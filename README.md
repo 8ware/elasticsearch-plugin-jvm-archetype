@@ -40,6 +40,27 @@ package or name of the plugin's main class changes the `pom.xml`, i.e. the
 `elasticsearch.plugin.classname` property *must* be adjusted as well.
 
 
+Features
+--------
+
+*	Run plugin with Elasticsearch by building the project with `mvn package -P develop`
+	and starting Elasticsearch afterwards with `mvn exec:exec -P develop`
+*	Run Elasticsearch in debug mode (i.e. with remote debugging enabled) using
+	the `debug` profile: `mvn exec:exec -P debug,develop`. *Note, that specifying
+	only the `debug` profile will lead to an error.*
+
+
+Properties
+----------
+
+| Property             | Description                                                |
+|----------------------|------------------------------------------------------------|
+| pluginname           | The name of the plugin *w/o* `Plugin` appended             |
+| package              | An alternative package name, defaults to `groupId`         |
+| elasticsearchbin     | The path to the Elasticsearch binary/script                |
+| elasticsearchversion | The Elasticsearch version the plugin should be created for |
+
+
 Elasticsearch Compatibility
 ---------------------------
 
